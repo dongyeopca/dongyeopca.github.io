@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>흐름</title>
+
+</head>
+
+<body>
+    <div style="margin-left: 25%; width:50%; display: flex; align-items: center; flex-direction: column;">
+        <h1>Git Basic</h1>
+        <hr style="width:100%; border-bottom: solid black;"><br>
+        <img src="status.PNG" style="width: 100%;">
+        자료 출처:youtube 드림코딩by앨리<br><br>
+        <p>
+            현재 내가 작업을 하고 있는 공간=working directory<br>
+            곧 커밋할 파일에 대한 정보를 저장하는 곳 = Staging Area<br>
+            커밋 된 정보들이 저장되는 곳 = .git directory<br><br><br>
+            깃이 파일에 대한 정보를 가지고있는게 tracked
+            없는게 untracked<br>
+            깃이 트레킹 하고있는것들중에서도 수정이 된거는 unmodified와 modified로 나뉨<br><br>
+
+            1.워킹 트리에서 파일을 수정한다<br>
+            2.staging area에 파일을 stage 해서 커밋할 스냅샷을 만든다.모든 파일을 추가할 수도 있고 선택하여 추가할 수도 있다<br>
+            3.staging area에 있는 파일들을 커밋해서 git 디렉토리에 영구적인 스냅샷으로 저장한다.<br>
+        </p>
+        <h3>전체적인 흐름</h3>
+        <img src="git3.PNG" style="width: 100%;">
+        <br><br><br>
+        <h1>자주 사용하는 깃 명령어</h1>
+        <hr style="width:100%; border-bottom: solid black;"><br>
+        Git + 옵션 /형태로 이루어짐
+        <br><br><br>
+        git init . => 현재 디렉토리에 깃의 로컬저장소 생성(폴더 생성후 처음에만 하시면 됩니다.)<br>
+        git add . => 현재 디렉토리에 있는<br>
+        git status => 현재 브랜치에 올라가있는 정보들<br>
+        git commit -m "커밋할 메세지(ex: login function add)"=> 메세지와 함께 커밋<br>
+        git remote add origin 깃헙 레포지토리 url(깃허브 레포지토리와 연결 해줄 때만 해주시면 됩니다 최초 연결시에만.)=> 원격저장소 연결<br>
+        git remote -v => 연결된 레포지토리 확인<br>
+        git push origin master => 연결된 레포지토리의 마스터 브랜치로 푸쉬
+        <hr style="width:100%; border-bottom: solid black;"><br><br>
+        <a href="four.html">Go</a>
+
+
+
+
+    </div>
+    
+
+</body>
+
+</html>
